@@ -102,22 +102,15 @@ h2 {
     font-size: 1.5em;
 }
 
+.landing p{
+    margin: 0 300px;
+}
+
 /* SOBRE */
 
 .sobre h2 {
     margin-bottom: 1em;
 }
-
-/*.sobre .avatar {
-    width: 140px;
-    margin: auto;
-}*/
-
-/*.sobre .avatar img {
-    width: 140px;
-    margin-bottom: 0.6em;
-    transition: 0.5s;
-}*/
 
 p {
     text-indent: 3.5em;
@@ -132,6 +125,10 @@ p {
 /* DADOS */
 
 /* INSCRIÇÃO */
+
+form{
+    margin-bottom: 3em;
+}
 
 form span{
     display: block;
@@ -225,18 +222,10 @@ button{
     min-width: 250px;
 }
 
-.ilustra-principal{
-    width: 30vw;
-    margin-bottom: 0.6em;
-    margin-right: 60.0em;
-    margin-left: 0.8em;
-    transition: 0.5s; 
-    min-width: 250px;
-}
-
 p.rodape{
 	text-indent: 71.5em;    
-	margin-top: -80px;
+    margin-top: -80px;
+    position: fixed;
 }
 
 /* MEDIA QUERIES */
