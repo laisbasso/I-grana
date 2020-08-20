@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">	
+	<meta nome="description" content="Proposta de auxiliar os consumidores na administração dos seus rendimentos, nas suas decisões de poupança e investimento, no seu consumo consciente, na projeção de dininuir as dividas e aumentar a renda familiar.">	
+	
+	<!--lincando Chatbot -->		
+	<link rel="stylesheet" href="json/chatbot.css">	
+		
+    <script src="https://kit.fontawesome.com/3fc6baae7f.js" crossorigin="anonymous"></script>
+    <title>Projeto Serasa</title>
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre">Inteligência Financeira</a></li>
+                <li><a href="#dados">Negociação</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#integrantes">Integrantes</a></li>
+                <li><a href="#contato">Contato</a></li>
+				<li><a href="assets/chatbot.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1 class="site-title dm-mono">Projeto Serasa</h1>
+            <h2 class="site-subtitle dm-mono font-300">Maria vai com as devs</h2>
+        </div>
+    </header>
+
+    <!-- /MENU -->
+
+    <!-- SOBRE -->
+
+    <section class="sobre" id="sobre">
+        <h2>Inteligência Financeira</h2>
+
+        <div class="avatar">
+            <figure>
+                <img class="ilustra-m" src="assets/img/illustration/videos.svg">
+            </figure>
+        </div>
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non nihil enim architecto facilis
+                praesentium et quaerat dicta amet voluptate laborum, id velit veritatis, impedit nulla ullam,
+                consectetur perspiciatis ipsa.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, repellendus. Iure, libero fugiat
+                nostrum perferendis necessitatibus mollitia dolorum incidunt! Optio aspernatur aliquid animi quas quo
+                qui quasi a, enim deleniti?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsa error accusantium. Nesciunt
+                architecto voluptatem aperiam. Error, assumenda optio nihil laudantium alias aliquid amet, libero
+                possimus unde molestias eum mollitia.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non nihil enim architecto facilis
+                praesentium et quaerat dicta amet voluptate laborum, id velit veritatis, impedit nulla ullam,
+                consectetur perspiciatis ipsa.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, repellendus. Iure, libero fugiat
+                nostrum perferendis necessitatibus mollitia dolorum incidunt! Optio aspernatur aliquid animi quas quo
+                qui quasi a, enim deleniti?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsa error accusantium. Nesciunt
+                architecto voluptatem aperiam. Error, assumenda optio nihil laudantium alias aliquid amet, libero
+                possimus unde molestias eum mollitia.
+            </p>
+        </div>
+    </section>
+
+    <!-- /SOBRE -->
+
+    <!-- DADOS -->
+
+    <section id="dados">
+
+        <h2>Negociação</h2>
+
+        <div class="avatar">
+            <figure>
+                <img class="ilustra-m" src="assets/img/illustration/mulher-grafico-barra.svg">
+            </figure>
+        </div>
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non nihil enim architecto facilis
+                praesentium et quaerat dicta amet voluptate laborum, id velit veritatis, impedit nulla ullam,
+                consectetur perspiciatis ipsa.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, repellendus. Iure, libero fugiat
+                nostrum perferendis necessitatibus mollitia dolorum incidunt! Optio aspernatur aliquid animi quas quo
+                qui quasi a, enim deleniti?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsa error accusantium. Nesciunt
+                architecto voluptatem aperiam. Error, assumenda optio nihil laudantium alias aliquid amet, libero
+                possimus unde molestias eum mollitia.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non nihil enim architecto facilis
+                praesentium et quaerat dicta amet voluptate laborum, id velit veritatis, impedit nulla ullam,
+                consectetur perspiciatis ipsa.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, repellendus. Iure, libero fugiat
+                nostrum perferendis necessitatibus mollitia dolorum incidunt! Optio aspernatur aliquid animi quas quo
+                qui quasi a, enim deleniti?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsa error accusantium. Nesciunt
+                architecto voluptatem aperiam. Error, assumenda optio nihil laudantium alias aliquid amet, libero
+                possimus unde molestias eum mollitia.
+            </p>
+        </div>
+
+
+    </section>
+
+    <!-- /DADOS -->
+
+    <!-- INSCRIÇÃO -->
+    <section id="inscricao">
+
+        <h2 class="text-center">Inscreva-se</h2>
+        <div>
+            <form>
+                <span>
+                    <label for="nome">Nome completo:</label>
+                    <input class="input-padrao block" type="text" id="nome" onkeyup="validaNome()" required>
+                    <span id="txtNome"></span>
+                </span>
+
+                <span>
+                    <label for="email">Email:</label>
+                    <input class="input-padrao block" type="email" id="email" onkeyup="validaEmail()"  required>
+                    <span id="txtEmail"></span>
+                </span>
+
+                <span>
+                    <label for="nasc">Data de nascimento:</label>
+                    <input class="input-padrao block" type="date" id="nasc" onkeyup="validaEmail()" required>
+                    <span id="txtNasc"></span>
+                </span>
+
+                <span>
+                    <label for="estado">Estado em que reside:</label>
+                    <select class="block" type="estado" id="estado" onkeyup="validaEmail()" required>
+                        <option>Estado</option>
+                        <option>Estado</option>
+                        <option>Estado</option>
+                    </select>
+                </span>
+
+                <span>
+                    <label for="msg">Como você ficou sabendo do Projeto:</label>
+                    <textarea class="block" name="msg" id="msg" cols="30" rows="5"></textarea>
+                    <span id="txtMsg"></span>
+                </span>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+
+        <div class="avatar">
+            <figure>
+                <img class="ilustra-m" src="assets/img/illustration/grafico-dados.svg">
+            </figure>
+        </div>
+    </section>
+
+    <!-- /INSCRIÇÃO -->
+
+    <!-- INTEGRANTES -->
+
+    <section class="integrantes" id="integrantes">
+        <h2>Integrantes</h2>
+        <div class="grid">
+            <figure>
+                <a target="_blank" href="">
+                    <img class="img-portfolio" src="./assets/img/integrantes/Brunna-Quatrochi.jpg"
+                        alt="Brunna Quatrochi">
+                    <figcaption>Brunna Quatrochi</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a target="_blank" href="">
+                    <img class="img-portfolio" src="./assets/img/integrantes/Jessica-Paula.jpg" alt=">Jéssica Paula">
+                    <figcaption>Jéssica Paula</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a target="_blank" href="">
+                    <img class="img-portfolio" src="./assets/img/integrantes/Lais-Basso.png" alt="Lais Basso">
+                    <figcaption>Lais Basso</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a target="_blank" href="">
+                    <img class="img-portfolio" src="./assets/img/integrantes/Lidiane-Trindade.jpg"
+                        alt="Lidiane Trindade">
+                    <figcaption>Lidiane Trindade</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a target="_blank" href="">
+                    <img class="img-portfolio" src="./assets/img/integrantes/icon.png" alt="Liuca Yonaha">
+                    <figcaption>Liuca Yonaha</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a target="_blank" href="">
+                    <img class="img-portfolio" src="./assets/img/integrantes/Pamela-Andrelo.jpg" alt="Pamela Andrelo">
+                    <figcaption>Pamela Andrelo</figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+
+    <!-- /INTEGRANTES -->
+
+    <!-- CONTATO -->
+
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div class="grid">
+            <a id="github" target="_blank" href="">
+                <i class="fab fa-github"></i>
+            </a>
+            <a id="twitter" target="_blank" href="">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a id="linkedin" target="_blank" href="">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a id="gmail" href="">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- /CONTATO -->
+	
+	
+	<br><footer>
+		<p class="rodape"><a href="#">Ir ao top</a></p>
+	</footer>
+
+</body>
+
+</html>
