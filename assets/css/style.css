@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dm-mono {
+    font-family: "DM Mono", monospace;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MENU */
+
+.menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border-bottom: 2px solid #ffb129;
+    z-index: 2;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 20px 5vw;
+    transition: 0.5s;
+    color: #551a99;
+}
+
+a {
+    text-decoration: none;
+    color: #551a99;
+}
+
+a:active,
+a:hover {
+    color: #ffb129;
+}
+
+.site-title,
+.site-subtitle {
+    text-align: center;
+    color: #e75c62;
+}
+
+.site-title {
+    font-size: 3em;
+}
+
+section {
+    padding: 2em;
+    padding-top: 5em;
+}
+
+.flex{
+    display: flex;
+}
+
+h2 {
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+/* SOBRE */
+
+.sobre h2 {
+    margin-bottom: 1em;
+}
+
+/*.sobre .avatar {
+    width: 140px;
+    margin: auto;
+}*/
+
+/*.sobre .avatar img {
+    width: 140px;
+    margin-bottom: 0.6em;
+    transition: 0.5s;
+}*/
+
+p {
+    text-indent: 3.5em;
+    margin-bottom: 0.6em;
+    text-align: justify;
+}
+
+.sobre .right {
+    text-align: right;
+}
+
+/* DADOS */
+
+/* INSCRIÇÃO */
+
+form span{
+    display: block;
+    margin-top: 0.7em;
+}
+
+.block{
+    display: block;
+}
+
+.input-padrao{
+    width: 300px;
+}
+
+textarea{
+    width: 300px;
+}
+
+button{
+    width: 60px;
+    background-color: #ea4335;
+    color: white;
+    box-shadow: none;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* INTEGRANTES */
+
+.integrantes .grid {
+    display: grid;
+    gap: 2em;
+}
+
+.contato .grid,
+.integrantes figure {
+    text-align: center;
+}
+
+.img-portfolio {
+    height: 180px;
+    transition: 0.5s;
+    margin-bottom: 0.6em;
+    border-radius: 50%;
+}
+
+.sobre .avatar .ilustra img:hover,
+.img-portfolio:hover {
+    transform: scale(1.1);
+}
+
+/* CONTATO */
+
+.contato a {
+    transition: 0.5s;
+    font-size: 2em;
+}
+
+.contato a:active,
+.contato a:hover {
+    opacity: 0.7;
+}
+
+#github {
+    color: #262e31;
+}
+
+#codepen {
+    color: black;
+}
+
+#twitter {
+    color: #1da1f3;
+}
+
+#linkedin {
+    color: #0571ac;
+}
+
+#gmail {
+    color: #cd3d3a;
+}
+
+/* ILUSTRAS */
+
+.ilustra-g{
+    width: 40vw;
+}
+
+.ilustra-m{
+    width: 30vw;
+    margin-bottom: 0.6em;
+    transition: 0.5s;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 2em !important;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 540px) {
+    .sobre .avatar {
+        float: left;
+        margin-right: 1.5em;
+    }
+    .sobre p:first-of-type {
+        margin-top: 4em;
+    }
+    .integrantes .grid {
+        grid-template-columns: repeat(2, 220px);
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media (min-width: 800px) {
+    .integrantes .grid {
+        grid-template-columns: repeat(3, 220px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-height: 1000px) {
+    section {
+        max-height: 1000px;
+    }
+}
