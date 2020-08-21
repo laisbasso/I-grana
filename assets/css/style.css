@@ -58,7 +58,7 @@ a {
 
 a:active,
 a:hover {
-    color: #ffb129;
+    color: #E63888;
 }
 
 .site-title,
@@ -161,7 +161,7 @@ textarea{
 
 button{
     width: 60px;
-    background-color: #ea4335;
+    background-color: #e75c62;
     color: white;
     box-shadow: none;
     padding: 3px 10px;
